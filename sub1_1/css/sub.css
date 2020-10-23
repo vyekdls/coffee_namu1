@@ -1,0 +1,179 @@
+/* style.css */ 
+  /* 초기화 */
+
+  * {
+    margin: 0 auto; padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+li {list-style-type: none;}
+body {
+    font-weight: 12px;
+    width: 1920px; height: 1800px;
+    font-family: 'NanumSquare',sans-serif;
+}
+/* header 영역 */
+#header_logo {
+    width: 69px; height: 69px;
+    float: left;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-left: 391px;
+    position: relative;
+   /* outline: 2px solid red; */
+}
+
+#gnb {
+    width: 1131px; height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+#gnb > .depth1 > li {
+    float: left;
+    width: calc(546px / 5); height: 42px;
+    margin-top: 49px;
+    text-align: center;
+   /* outline: 2px solid red; */
+}
+#gnb > .depth1 > li > a {
+    height: 42px;
+    display: block;
+    line-height: 30px;
+    font-size: 18px;
+}
+#gnb > .depth1 > li > a:hover {
+    background:#abc;
+}
+
+/* depth2 menu */
+#gnb .depth2 {
+    display: none;
+}
+
+/* icon */
+#icon {
+    position: absolute;
+    top: 10px;
+}
+#icon li > a {
+    float: right;
+}
+#main {
+    width: 1920px; height: 333px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+#main > header {
+    position: relative;
+    height: 333px;
+    background-image: url('../images/sub1-1.visual.jpeg');
+    background-size: cover;
+    width: 100%;
+}
+#main > header h2 {
+    color: #fff;
+    position: relative;
+    top: 166px;
+    text-align: center;
+    font-size: 34px;
+}
+#lnb {
+    position: relative;
+    width: 1920px;
+}
+
+#lnb > ul {
+    margin: 0 auto;
+}
+#lnb li {
+    float: left;
+    text-align: center;
+    height: 47px;
+    line-height: 47px;
+    border-bottom: 1px solid #000;
+}
+#lnb li:first-child {
+    width: 960px;
+}
+#lnb li:nth-child(2) {
+    width: 960px;
+}
+#lnb li:first-child > a {
+    border-bottom: 3px solid #000;
+    display: inline-block;
+    height: 47px;
+}
+/* content 영역 */
+#content {
+    position: relative;
+    width: 1200px; /* height: 1367px; */
+}
+#content > div > img:first-child {
+    /* position: relative; */
+    position: absolute;
+    right: 500px;
+    top: 150px;
+}
+#content > div h2 {
+    position: absolute;
+    top: 450px;
+    right: 200px;
+    text-align: center;
+}
+#content > div > p {
+    position: absolute;
+    top: 520px;
+    right: 190px;
+}
+#content > h2, 
+#content > div > p {
+    text-align: center;
+}
+
+/* brand history */
+#content .brand_body {
+    position: relative;
+    width: 572px; height: 640px;
+    top: 600px;
+}
+.brand_body > .content_1 {
+    /* margin-bottom: 100px; */
+    height: 180px; width: 600px;
+    overflow: hidden;
+    outline: 2px solid red;
+}
+.brand_body > .content_1 > img {
+    float: left;
+}
+.brand_body > .content_1 > p:first-child {
+    float: left;
+}
+.brand_body .content_2 {
+   height: 201px; width: 600px;
+   overflow: hidden;
+   outline: 2px solid red;
+}
+.brand_body .content_2 img {
+    float: right;
+}
+.brand_body .content_2 > .text_2 {
+    width: 300px; height: 201px;
+    overflow: hidden;
+    float: left;
+    outline: 2px solid green;
+}
+.brand_body .content_3 {
+    width: 600px; height: 170px;
+    overflow: hidden;
+    outline: 2px solid red;
+}
+.brand_body .content_3 > img:last-child {
+    float: left;
+}
+.brand_body .content_3 h3:last-child,
+.brand_body .content_3 p:last-child {
+    float: left;
+}
